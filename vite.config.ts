@@ -8,7 +8,9 @@ export default defineConfig({
     lib: {
       entry: "src/Typography.tsx",
       name: "TypographyPackage",
-      fileName: (format) => `typography.${format}.js`,
+      fileName: "index",
+      formats: ["es", "umd"],
+      // fileName: (format) => `typography.${format}.js`,
     },
     rollupOptions: {
       external: ["react"],
