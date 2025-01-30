@@ -2,9 +2,13 @@
   "name": "@songgoeun/ui-manager",
   "version": "0.0.0",
   "type": "module",
-  "main": "dist/index.js",
-  "module": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "main": "dist/typography.umd.js",
+  "module": "dist/typography.es.js",
+  "types": "dist/typography.d.ts",
+  "exports": {
+    "import": "./dist/typography.es.js",
+    "require": "./dist/typography.umd.js"
+  },
   "files": [
     "dist",
     "fonts"
